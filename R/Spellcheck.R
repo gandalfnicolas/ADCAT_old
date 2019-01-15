@@ -48,7 +48,7 @@ Spellcheck = function(raw, cleaned, dict_cleaned, rawlist){
       return(cleaned)}
     toreturn = clean_naresponses(toreturn)
     toreturn = trimws(toreturn)
-    toreturn = toLower(toreturn)
+    toreturn = quanteda::toLower(toreturn)
     toreturn = clean_symbols(toreturn)
     toreturn = Lemmatize(toreturn)
     toreturn = delete_ending_Ss(toreturn)
